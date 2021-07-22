@@ -1,0 +1,20 @@
+body {
+    background-color: pink;
+
+    color: #333
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    background-color: #fff;
+}
+
+h1{
+    /* Taille de typo en px en unités absolue */
+    font-size: 80px;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-size: 40px;
+}

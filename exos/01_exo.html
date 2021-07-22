@@ -4,45 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cascading Style Sheet</title>
-    <!-- style dans L'en-tete -->
+    <title>Cascading Style Sheet - EXO 1</title>
+     <!-- lien externe vers la feuille de style 01_style.css  ce lien est commun à toutes les pages du site-->
+     <link rel="stylesheet" href="css/01_style.css">
+   <!-- style dans l'en-tête si besoin de style propre à cette page  -->
     <style>
-
-        body {
-            background-color: rgb(204, 50, 140);
-        }
-
-        h1 {
-            background-color: deepskyblue;
-        }
+       /* élément {propriété : valeur;} */
+          
         ul {
-            background-color: dodgerblue;
+            background-color: rgb(177, 45, 45) ;
         }
         li {
-            background-color: dodgerblue;
+            background-color: purple;
+            color: orangered;
         }
         a {
             background-color: #fff;
             text-decoration: none;
         }
     </style>
+    
 </head>
 <body>
-    <h1>CSS 3 - Feuille de style en cascade</h1>
-
-    <p>Il existe 3 moyens de faire du style à l'aide du CSS :</p>
-    <!-- ul>li*3{$/} -->
+    <h1>Feuille de style en cascade -CSS 3</h1>
+    <p>Il existe 3 moyens de faire du style à l'aide du CSS </p>
+    <!-- et ce style au plus proche de l'élément est une exception  -->
     <ul>
         <li style="color: blue;">1/ Le style en ligne</li>
-        <li>2/ Le style dans l'en-tête (dans la balise <code>&lt;head&gt;</code>)</li>
-        <li>3/ Le style dans une feuille de style externe. </li>
+        <li>2/ Le style dans l'en-tête (dans la balise <code>&lthead&gt</code>) </li>
+        <li>3/ Le style dans la feuille de style externe.</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, assumenda. Obcaecati, velit molestias, cumque pariatur ipsa fugit eaque odit placeat sint nam voluptatum eius expedita doloremque dolore, provident saepe voluptatem.
-    Totam expedita unde libero rem quasi vel sed modi quis voluptatibus ipsam officiis iusto nam, a, aliquam natus suscipit eaque excepturi saepe fugiat debitis. Modi error molestiae nisi similique autem.
-    Eligendi adipisci veniam dolores dolorum, ducimus exercitationem, deleniti natus vitae amet explicabo illo quaerat ab ad. Totam hic, inventore ut adipisci quos at? Pariatur obcaecati nemo incidunt recusandae nostrum iure!
-    Ut, iste. Aliquam tempora unde nisi id quisquam enim necessitatibus ut dolore illo temporibus voluptatum ratione voluptas similique harum quibusdam odio qui aspernatur corrupti, assumenda itaque quam perferendis molestiae! Praesentium?
-    Quis temporibus animi maxime numquam nemo, necessitatibus possimus rerum soluta minima aut repellat vitae asperiores sit aperiam est recusandae? Nam itaque fugit, id hic mollitia officiis quos nobis praesentium laboriosam!</p>
-    <p>Lien vers <a href="https://swiship.co.uk/track?loc=fr-FR&id=CC0220572599">mon colis</a></p>
-    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem consectetur in enim doloremque! Assumenda, deserunt repellendus. Odit sunt libero totam dicta repudiandae, unde voluptas nulla quo aut cumque laborum hic?
+    Tenetur repudiandae, eius quae nihil, iusto adipisci aliquam quidem corporis placeat aliquid illo, eligendi ipsum illum! Modi dolores libero, amet tempore perspiciatis dolor voluptate ea ad, magni porro harum quaerat.</p>
+    <p> P1/ Courier NEW Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem consectetur in enim doloremque! Assumenda, deserunt repellendus. Odit sunt libero totam dicta repudiandae, unde voluptas nulla quo aut cumque laborum hic?</p>
+    <p id="times">P2/ Time Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem consectetur in enim doloremque! Assumenda, deserunt repellendus. Odit sunt libero totam dicta repudiandae, unde voluptas nulla quo aut cumque laborum hic?</p>
+    <p>Lien vers <a href="https://wf3.webforce.life/dashboard">WebForce3</a></p>
 </body>
 </html>

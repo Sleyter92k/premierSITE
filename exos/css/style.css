@@ -1,0 +1,36 @@
+/* style pour premier site */
+body{
+    background-color: rgb(193, 65, 225);
+}
+/* Les titres du site */
+
+h1 {
+    font-size: 45px;
+    /* espacement entre les lettres */
+    letter-spacing: 1px;
+    /* couleur réf. héxadécimale */
+    color: #3729b9;
+}
+
+h2 {
+    font-size: 35px;
+    color: #2c3e50
+    /* épaisseur des caractères */
+    font-weight: bold;
+    /* ombre portée une propriété qui a besoin de 1 ou plusieurs valeurs cd. : https://developer.mozilla.org/fr/docs/Web/CSS/text-shadow */
+    text-shadow: 1px 1px 2px #aaa;
+}
+/* taille de l'icône dans le h2 */
+/* i enfant de h2 ; l'icône sera 150% plus grande que la taille d'origine */
+h2 i {
+    font-size: 150%;
+}
+h3 {
+    font-size: 22px;
+    color: #4f2c50;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+h4 {
+    text-align: center;
+}
