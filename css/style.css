@@ -11,6 +11,7 @@ font-family: 'Oswald', sans-serif; */
 
 body{
     font-family: 'Oswald', sans-serif;
+    background-image: url('../img/concrete-texture.png');
 }
 /* Les titres du site */
 
@@ -49,4 +50,11 @@ h4 {
 
 blockquote{
     font-family: 'Lemonada', cursive;
+    font-size: 120%;
+}
+
+blockquote i {
+    font-size: 350%;
+    color:royalblue
+    vertical-align: middle;
 }
