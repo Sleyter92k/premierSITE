@@ -1,3 +1,32 @@
+@charset "UTF-8";
+
+/* reset simple  */
+/* l'étoile signifie tout all */
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* Fin du reset */
+
 /* style pour premier site */
 
 /* Les typos Google Font utilisées dans les sites */
@@ -22,7 +51,7 @@ h1 {
     /* espacement entre les lettres */
     letter-spacing: 1px;
     /* couleur réf. héxadécimale */
-    color: #3729b9;
+    color: rgb(244, 244, 247);
 }
 
 h2 {
@@ -40,7 +69,7 @@ h2 i {
 }
 h3 {
     font-size: 22px;
-    color: #4f2c50;
+    color: rgb(135, 135, 192);
     text-shadow: 1px 1px 2px #aaa;
 }
 
@@ -55,6 +84,43 @@ blockquote{
 
 blockquote i {
     font-size: 350%;
-    color:royalblue
+    color:rgb(135, 135, 192);
     vertical-align: middle;
+}
+
+header {
+    height: 175px;
+    background-color: rgb(135, 135, 192);
+}
+
+/* dans le header, les trois zones suivantes flottent toutes les trois à gauche elles ont donc une largeur en %, donc une largeur relatives à lélément parent donc header */
+/* la propriété float sert à casser le flux du html */
+
+#logo {
+    width: 25%;
+    float: left;
+    /* marge intérieure de l'élément padding = rembourrage */
+    padding: 15px;
+    /* l'aspect de la boite */
+    background-color: rgb(135, 135, 192);
+    /* le texte */
+    text-align: center;
+}
+
+#slogan {
+    width: 50%;
+    float: left;
+    padding-top: 50px;
+    background-color: rgb(135, 135, 192);
+}
+
+#social {
+    width: 25%;
+    float: left;
+    background-color: rgb(135, 135, 192);
+}
+
+.clear {
+    /* la classe clear pour rétablir le flux */
+    clear: both;
 }
