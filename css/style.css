@@ -120,6 +120,7 @@ header {
     background-color: rgb(135, 135, 192);
 }
 
+/* ici on cible un élément i dont le parent à l'id "social" */
 #social i {
     /* je change la nature de l'élément i qui est de type inline, en élément de type block */
     display: block;
@@ -134,6 +135,83 @@ header a {
     color: rgb(15, 15, 46);
 }
 
+/* fin header */
+
+/* la nav, la navigation */
+
+nav {
+    height: 70px;
+    padding: 15px;
+
+    background-color: rgb(107, 107, 216);
+    border-bottom: 8px solid rgb(135, 135, 192);
+
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    padding: 2px 10px;
+
+    background-color: cornflowerblue;
+    border: 2px solid #fff;
+    /* arrondi des angles de bordures */
+    border-radius: 10px 0;
+
+    font-family: 'Oswald', sans-serif;
+    color: rgb(2, 1, 1);
+    text-decoration: none;
+    font-size: 16px;
+    /* Transition sur le nav a, marche avec le :hover */
+    transition: 0.5s;
+}
+
+nav a:hover {
+    /* a :hover une pseudo-class un effet au survol du curseur */
+    background-color: darkslateblue;
+    color: #fff;
+}
+/* fin de nav */
+
+/* les zones principales */
+
+main{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);   
+}
+
+aside {
+    height: 250px;
+    width: 30%;
+    float: left;
+    background-color: rgb(92, 118, 167);
+}
+
+#accueil {
+    width: 70%;
+    float: left;
+    }
+    
+    section {
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    
+    /* la class clear pour rétablier le flux */
+    .clear {
+    clear: both;
+    }          
+    
+    footer {
+        height: 50px;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #2980b9;  
+    
+        text-align: center;
+        color: #fff;  
+    }
 .clear {
     /* la classe clear pour rétablir le flux */
     clear: both;
