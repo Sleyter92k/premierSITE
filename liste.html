@@ -1,127 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/6d14917248.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Site d'apprentissage du HTML 5 et du CSS 3 - Colombbus Suresnes 2021" />
+
+    <meta name="keywords"
+        content="Premier site, Colombbus, Suresnes, l'agence Suresnes,lagencesuresnes, HTML 5, CSS 3, Patrick Isola, Isola, encadrant" />
+
+    <meta name="author" content="Rachid Ouasti" />
+    <title>Mon premier site en HTML 5 et en CSS 3 - Textes HTML</title>
+
+    <!-- les Google Fonts anton, Lemonada et Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap"
+        rel="stylesheet">
+
+    <!-- feuille de style du site -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- nous chargeons en CDN (content delivery network) la typo font awesome, la version gratuite, qui comporte 1600 icônes. -->
+    <!-- FontAwesome Typos -->
+    <script src="https://kit.fontawesome.com/aad71b5bb4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-
         <div id="logo">
+            <!-- le bouton et le lien vers l'ancre #logo -->
             <a href="#logo">
                 <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
             </a>
-            <img src="img/logo.png" alt="logo html 5 et css 3">
+            <img src="img/logo.png" alt="logo html 5 et css 3" />
         </div>
 
         <div id="slogan">
+            <a href="index.html"></a>
             <h1>Mon premier site en HTML 5 et CSS 3</h1>
         </div>
 
         <div id="social">
-            <a href="https://www.instagram.com/lagencesuresnes/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.instagram.com/lagencesuresnes/?hl=fr" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
             <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
         </div>
+
         <div class="clear"></div>
-        
-
     </header>
-    <!--fin header-->
 
+    <!-- navigation principale -->
     <nav>
         <div>
-            <!-- zone du menu avec des liens simples pour faire notre menu -->
-            <a href="index.html" title="HTML5 CSS3 - Acceuil">Acceuil</a>
-            <a href="texte.html" title="HTML5 CSS3 - Texte">Texte</a>
-            <a href="selecteur.html" title="HTML5 CSS3">Sélecteur</a>
-            <a href="image.html" title="HTML5 CSS3 - Sélecteur">Image</a>
-            <a href="position.html" title="HTML5 CSS3 - Position">Position</a>
-            <a href="zoning.html" title="HTML5 CSS3 - Zoning">Zoning</a>
-            <a href="tableau.html" title="HTML5 CSS3 - Tableau">Tableau</a>
-            <a href="liste.html" title="HTML5 CSS3 - Listes">Listes</a>
-            <a href="liens.html" title="HTML5 CSS3 - Liens">Liens</a>
-            <a href="formulaire.html" title="HTML5 CSS3 - Formulaire">Formulaire</a>
-            <a href="multimedia.html" title="HTML5 CSS3 - Multimédia">Multimédia</a>
-            <a href="animations.html" title="HTML5 CSS3 - Animation">Animation</a>
-            <a href="recapitulatif.html" title="HTML5 CSS3 - Récapitulatif">Récapitulatif</a>
+            <!-- Zone du menu des liens simples pour faire notre menu -->
+            <a href="index.html" title="HTM 5 CSS 3 - Accueil">Accueil</a>
+            <a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
+            <a href="selecteur.html" title="HTML 5 CSS 3 - Sélecteur">Sélecteur</a>
+            <a href="image.html" title="HTML 5 CSS 3 - Image">Images</a>
+            <a href="position.html" title="HTML 5 CSS 3 - Position">Position</a>
+            <a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
+            <a href="tableau.html" title="HTML 5 CSS 3 - Tableaux">Tableau</a>
+            <a href="liste.html" title="HTML 5 CSS 3 - Liste" class="active">Listes</a>
+            <a href="lien.html" title="HTML 5 CSS 3 - Lien">Liens</a>
+            <a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire">Formulaire</a>
+            <a href="multimedia.html" title="HTML 5 CSS 3 - Multimedia">Multimédia</a>
+            <a href="animation.html" title="HTML 5 CSS 3 - Animation">Animation</a>
+            <a href="recapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
         </div>
-
     </nav>
+    <!-- fin navigation principale-->
 
     <main>
-        <!-- Nous chargeons en CDN (content delivery network) la typo font awesome, La version gratuite, qui comporte 1600 icone. -->
-        <!-- FontAwesome Typos -->
+        
         <section>
-            <h2>Les listes - <i class="fas fa-list-ul"></i></h2>
+            <h2>Les listes - <i class="fas fa-list-ol"></i> </h2>
             <h3>Les listes avec la balise <code>&lt;ul&gt;</code></h3>
-            <p>Les fruits que préfère Miredi</p>
-
+            <h4>Les fruits que préfère Miredie</h4>
+            <!--ul : unordered list ; liste non ordonnée ou liste à puces -->
             <ul class="fruit">
-                <!-- li : list item ; un élément de liste -->
-                <li><i class="far-hand-spock"></i>Raisin</li>
-                <li><i class="far-hand-spock"></i>Cerise</li>
-                <li><i class="far-hand-spock"></i>Ananas ;)</li>
-                <li><i class="far-hand-spock"></i>Banane</li>
+                <!-- li : list item ; un élément de liste  -->
+                <li><i class="far fa-hand-spock"></i>Raisin</li>
+                <li><i class="far fa-hand-spock"></i>Melon</li>
+                <li><i class="far fa-hand-spock"></i>Orange</li>
+                <li><i class="far fa-hand-spock"></i>Ananas</li>
             </ul>
+
             <h3>Les listes avec la balise <code>&lt;ol&gt;</code></h3>
-            <p>Les fruits dans l'ordre de préference</p>
-            <!-- ol : ordored list ; liste ordonnée -->
-            <ol>
+            <p>Les fruits dans l'ordre de préférence </p>
+            <!-- ol : ordered list ; liste ordonnée ou liste numérotée -->
+            <ol class="fruit-2">
                 <li>Raisin</li>
                 <li>Ananas</li>
-                <li>Melon</li>
                 <li>Orange</li>
+                <li>Melon</li>
+            </ol>
 
-                <h3>Les listes imbriquées</h3>
-                <!-- ul>li*6 -->
-                <ul>
-                    <li>Afrique</li>
+            <h3>Les listes imbriquées</h3>
+
+            <!-- ul>li*6 -->
+            <ul class="imbriquee">
+                <li class="affiche">Afrique
                     <ul>
-                        <li>Cap-Vert</li>
+                        <li>Afrique du Sud</li>
                         <li>Algérie</li>
-                        <li>Cameroune</li>
+                        <li>Maroc</li>
+                        <li>Tunisie</li>
                     </ul>
+
+                </li>
+                <li class="affiche">Amérique
                     <ul>
-                        <li>Antarctique</li>
-                        <li>Amérique</li>
-                    <ul>
-                        <li>Méxique</li>
-                       <li>états-unis</li>
-                        <li>Canada</li>
+                        <li>Argentine</li>
+                        <li>Colombie</li>
+                        <li>Bresil</li>
+                        <li>Mexique</li>
                     </ul>
-                <li>Asie</li>
+                </li>
+                <li class="affiche">Asie
                     <ul>
-                    <li>Chine</li>
-                     <li>Inde</li>
-                    <li>Kazakstan</li>
-                    </ul>  
-                    <li>Europe</li>
-                    <ul>
-                    <li>France</li>
-                    <li>Portugal</li>
-                    <li>Allemagne</li>
+                        <li>Chine</li>
+                        <li>Indonésie</li>
+                        <li>Inde</li>
+                        <li>Japon</li>
                     </ul>
-                    <li>Océanie</li>
+                </li>
+                <li class="affiche">Europe
+                    <ul>
+                        <li>Belgique</li>
+                        <li>Espagne</li>
+                        <li>France</li>
+                        <li>Italie</li>
+                    </ul>
+                </li>
+                <li class="affiche">Océanie
                     <ul>
                         <li>Australie</li>
-                        <li>Nouvelle Zélande</li>
-                        <li>Fiji</li>
+                        <li>Fidji</li>
+                        <li>Nouvelle-Zélande</li>
+                        <li>Samoa</li>
                     </ul>
-                </ul>
-            </ol>
+                </li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; L'agence Suresnes 2021</p>
+        <!-- ppour les caractères spéciaux nous avons besoin de les coder cf: https://dev.w3.org/html5/html-author/charref,
+        ces caractères sont des "HTML entities" 
+        -->
+        <p>&copy; L'agence Suresnes, Sleyter Monteiro</p>
     </footer>
-    
 </body>
+
 </html>

@@ -392,6 +392,88 @@ aside {
         font-size: 150%;
         color:rgb(180, 130, 228)
     }
+
+    ol.fruit-2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style-type: upper-roman;
+    }
+
+    .imbriquee, .imbriquee ul {
+        padding-left: 30px;
+        background-color: #fff;
+    }
+
+    .imbriquee {
+        cursor: pointer;
+    }
+
+    .imbriquee ul {
+        display: none;
+    }
+
+    .affiche:hover ul {
+        display: block;
+    }
+    /* ici nous ciblons les li ( au survol de la souris ) qui sont dans une ul; imbriquée dans des li, eux-mêmes enfants d'un élément qui à la classe "imbriquee" */
+    .imbriquee li ul li:hover {
+        display: inline;
+        font-size: 150%;
+        background-color: orchid;
+        box-shadow: 5px 10px 10px gray;
+        transition-duration: 0.5s;
+    }
+
+    /* fin liste */
+
+    /* page des liens */
+
+    .ancre {
+        text-align: center;
+        padding: 100px;
+    }
+
+    .ancre a {
+        margin: 8px;
+        padding: 5px 10px;
+        background: rgb(27, 26, 110);
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 3px black;
+
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .ancre a:hover {
+        box-shadow: none;
+        text-shadow: 1px 5px 5px rgb(255, 255, 255);
+        transition-duration: 0.5s;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .clear {
     /* la classe clear pour rétablir le flux */
     clear: both;
