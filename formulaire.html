@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/6d14917248.js" crossorigin="anonymous"></script>
+
+		<!-- La description ; phrase qui s'affiche et décrit le site dans un résultat de moteur de recherche. Cette balise, parmi d'autres sera utile au référencement naturel. -->
+		<meta name="description" content="Site d'apprentissage du HTML5 et CSS3 - Colombbus Suresnes 2021">
+
+		<!-- les mots-clefs, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->
+		<meta name="keywords" content="Premier site, Colombbus, Suresnes, l'agence Suresnes, HTML 5, CSS 3, lagencesuresnes, Sleyter Lima Monteiro">
+
+		<!-- l'auteur de la page -->
+		<meta name="author" content="Sleyter Lima Monteiro">
+		<title>Mon premier site en HTML 5 et en CSS 3 - Acceuil</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/style.css">
+
+    </head>
+	<body>
+		<!-- bien indenter son code c'est s'assurer de la bonne imbrication des balises et augmenter la lisibilité du code-->
+		<!-- en-tete de la page-->
+		<header>
+
+			<div id="logo">
+				<a href="#logo">
+					<button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+				</a>
+				<img src="img/logo.png" alt="logo html 5 et css 3">
+			</div>
+
+			<div id="slogan">
+				<h1>Mon premier site en HTML 5 et CSS 3</h1>
+			</div>
+
+			<div id="social">
+				<a href="https://www.instagram.com/lagencesuresnes/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+			</div>
+			<div class="clear"></div>
+			
+
+		</header>
+
+        <!-- fin header-->
+
+		<!-- navigation principale-->
+		<nav>
+			<div>
+				<!-- zone du menu avec des liens simples pour faire notre menu -->
+				<a href="index.html" title="HTML5 CSS3 - Acceuil">Acceuil</a>
+				<a href="texte.html" title="HTML5 CSS3 - Texte">Texte</a>
+				<a href="selecteur.html" title="HTML5 CSS3">Sélecteur</a>
+				<a href="image.html" title="HTML5 CSS3 - Sélecteur">Image</a>
+				<a href="position.html" title="HTML5 CSS3 - Position">Position</a>
+				<a href="zoning.html" title="HTML5 CSS3 - Zoning">Zoning</a>
+				<a href="tableau.html" title="HTML5 CSS3 - Tableau">Tableau</a>
+				<a href="liste.html" title="HTML5 CSS3 - Listes">Listes</a>
+				<a href="lien.html" title="HTML5 CSS3 - Lien">Liens</a>
+				<a href="formulaire.html" title="HTML5 CSS3 - Formulaire">Formulaire</a>
+				<a href="multimedia.html" title="HTML5 CSS3 - Multimédia">Multimédia</a>
+				<a href="animations.html" title="HTML5 CSS3 - Animation">Animatiosn</a>
+				<a href="recapitulatif.html" title="HTML5 CSS3 - Récapitulatif">Récapitulatif</a>
+			</div>
+
+		</nav>
+		<!-- fin nav-->
+
+    <main>
+        <section>
+            <h2>Formulaire - <i class="fas fa-file-contract"></i></h2>
+            <!-- form; la balise d'un form tous les champs d'un formulaire sont cette balise -->
+            <!-- method ; manière de faire circuler les informations GET ou POST -->
+            <!-- action ; url de destination -->
+            <!-- enctype="multipart/form-data" ; autre attribut important quand on envoie un fichier -->
+            <form action="inscription.php" method="POST">
+                <!-- Label étiquette du formulaire, input champs de formulaire, type text -->
+                <!-- name sera indispensable en php, id indispensable en JS -->
+                <!-- required ; champs requis -->
+                <label for="pseudo">Choisissez un pseudo*</label>
+                <input type="" name="pseudo" id="pseudo" placeholder="votre pseudo" required>
+                <br>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom">
+                <br>
+
+                <label for="nom">nom*</label>
+                <input type="text" name="nom" id="nom" required>
+                <br>
+
+                <label for="password">Choisissez un mot de passe*</label>
+                <input type="password" name="password" id="password" required>
+                <br>
+
+                <label for="email">Courriel*</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+
+                <p>Quels fruits aimez-vous ?</p>
+
+                <label for="orange">Orange</label>
+                <input type="checkbox" name="orange" id="orange">
+
+                <label for="cerise">Cerise</label>
+                <input type="checkbox" name="ferise" id="ferise">
+
+                <label for="fraise">Fraise</label>
+                <input type="checkbox" name="fraise" id="fraise">
+
+                <label for="kiwi">kiwi</label>
+                <input type="checkbox" name="kiwi" id="kiwi">
+
+                <label for="aucun">Je n'aime pas les fruits</label>
+                <input type="checkbox" name="aucun" id="aucun">
+
+                <label for="tous">J'aime tous les fruits</label>
+                <input type="checkbox" name="tous" id="tous" checked>
+
+                <p>Si vous devez sauver un légume de la destruction : lequel ?</p>
+
+                <select name="legume" id="legume">
+                    <option value="">Choisissez</option>
+                    <option value="poireau">Poireau</option>
+                    <option value="choux_bruxelles">Choux de Bruxelles</option>
+                    <option value="celeri">Célerie</option>
+                </select>
+
+                <label for="remarque">Une remarque ?</label>
+                <textarea name="remarque" id="remarque" cols="50" rows="5"></textarea>
+
+
+
+                <br>
+                <input type="reset" name="annuler" value="Annuler">
+                <input type="submit" name="envoyer" value="Envoyer">
+
+                <input type="submit" name="envoyer" value="Envoyer">
+            </form>
+        </section>
+        <hr>
+        <section>
+            <p><a href="" target="_blank">Un autre formulaire</a></p>
+        </section>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+        <!-- pied de page-->
+		<footer>
+			<p>&copy; L'agence Suresnes 2021</p>
+            <div class="clear"></div>
+		</footer>
+		<!-- fin footer-->
+
+	</body>
+</html>
