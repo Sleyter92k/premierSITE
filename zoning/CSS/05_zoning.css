@@ -1,0 +1,43 @@
+body {
+    background-color: lightslategray;
+    text-align: center;
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    background-color: #fff;
+}
+
+header {
+    width: 1200px;
+    background-color: rebeccapurple;
+    float: left;
+    margin: auto;
+    min-height: 150px;
+}
+
+aside {
+    float: left;
+    width: 200px;
+    min-height: 400px;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+section {
+    float: left;
+    width: 800px;
+    min-height: 400px;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+footer {
+    background-color: lightslategrey;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
