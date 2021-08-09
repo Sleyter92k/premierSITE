@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(65, 218, 129);
+    color: #fff;
+}
+
+.rose {
+    background-color: pink;
+}
+
+.corail {
+    background-color: lightcoral;
+}
+
+.c1, .c2 {
+    height: 10em;
+    width: 10em;
+    float: left;
+    margin: 0.2em;
+
+    border: 0.2em solid white;
+    text-align: center;
+    border-radius: 10% 5% 40% 0%;
+}
+
+.vert {
+    background-color: green;
+}
+
+.bleu {
+    background-color: blue;
+}
+
+.clear {
+    clear: both;
+}
