@@ -1,0 +1,56 @@
+body {
+    background-color: #2d2170;
+    text-align: center;
+}
+
+h1, p {
+    margin: 0;
+}
+
+#zoning-07 {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: orangered;
+}
+
+#zoning-7 header {
+    height: 80px;
+    background-color: palegreen;
+}
+
+#zoning-7 nav {
+    height: 30px;
+    background-color: rebeccapurple;
+}
+
+#zoning-7 section {
+    height: 600px;
+    margin: 20px;
+    background-color: pink;
+}
+
+.a, .b, .c, .d {
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+
+.a {
+    background: lightblue;
+}
+
+.b {
+    background: lightseagreen;
+}
+
+.c {
+    background: lightgray;
+}
+
+.d {
+    background: lightskyblue;
+}
+
+.clear {
+    clear: both;
+}
