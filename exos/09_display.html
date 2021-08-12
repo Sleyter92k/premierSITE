@@ -6,18 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display 09</title>
     <style>
+        body {
+            background-color: rosybrown;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        main {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            background: aqua;
+        }
+        section {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid peru;
+            
+        }
+        p {
+            width: 80%;
+            margin: auto;
+        }
+        a {
+            background-color: pink;
+            color: white;
+        }
+        a:hover { background-color: red;
+
+        }
+        .rose{
+            background-color: tan;
+        }
+        .vert {
+            background-color: teal;
+        }
+        .display-none {
+            display: none;
+        }
+        .display-inline {
+            display: inline;
+
+        }
+        .display-block {
+            display: block;
+
+        }
+        a.display-block {
+            height: 50px;
+            text-align: center;
+            line-height: 40px;
+        }
+
 
     </style>
 </head>
 <body>
     <main>
-        <h1>Display</h1>
+        <h1>La propriété display</h1>
+        <!-- section 1 -->
         <section class="rose">
-            <h2>1/ Comportement normal de chez normal !</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laboriosam quo odit distinctio illum reiciendis accusantium dignissimos rem. At modi id, provident repellat molestiae maiores voluptatum laborum amet praesentium nostrum!
-            Impedit, modi nam quod, autem vero placeat optio animi nostrum, molestiae dolores magni perferendis. Optio, porro iure incidunt corporis asperiores impedit corrupti ullam, atque esse quibusdam rerum consequatur aliquam excepturi.</p>
-            <p>Et là je vais aller sur le site du journal <a href="">Le monde</a>qui est un exellent journal du soir.</p>
+            <h2>1/ Display, comportement normal de chez normal !</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat accusantium architecto quis culpa distinctio dolores voluptatem iste cum pariatur alias, quae error velit, corporis quasi placeat illum perspiciatis expedita ipsa.</p>
+
+            <p>Et là je vais aller sur le site du journal <a href="https://www.lemonde.fr/">Le monde</a> qui est un excellent journal du soir.</p>
+            <p>je rajoute un p</p>
         </section>
-    </main>  
+
+        <!-- section 2 -->
+        <section>
+            <h2>2/ Display none</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem deleniti, obcaecati, rerum laudantium nemo eaque iste recusandae est ea ipsa qui laboriosam voluptatibus! Deserunt voluptates facilis obcaecati? Soluta, magnam dolore?</p>
+
+            <p class="">Coucou les amis, un paragraphe !! Je rajoute un lien vers <a href="https://www.francemusique.fr/" class=""> site de mon choix</a> et après ce lien je rajoute encore du texte.</p>
+        </section>
+
+        <!-- section 3 -->
+        <section>
+            <h2>3/ Display inline</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nam exercitationem magni eveniet itaque repellendus ipsum labore ex enim rerum eos similique cumque modi, aliquam voluptatum veritatis corporis numquam? Recusandae!</p>
+
+            <p class="">Coucou les amis, un paragraphe !! Je rajoute un lien vers <a href="https://www.francemusique.fr/" class=""> site de mon choix</a> et après ce lien je rajoute encore du texte.</p>
+        </section>
+
+        <!-- section 4 ; affiche un élément comme un block, il commence sur une nouvelle -->
+        <section>
+            <h2>4/ Display block</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nam exercitationem magni eveniet itaque repellendus ipsum labore ex enim rerum eos similique cumque modi, aliquam voluptatum veritatis corporis numquam? Recusandae!</p>
+
+            <p class="">Coucou les amis, un paragraphe !! Je rajoute un lien vers <a href="https://www.francemusique.fr/" class=""> site de mon choix</a> et après ce lien je rajoute encore du texte.</p>
+
+        </section>
+
+        <!-- section 5 un élément inline est formaté comme élément inline mais on peut lui  donner des valeurs de hauteur et/ou de largeur -->
+        <section>
+            <h2>5/ Display inline-block</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nam exercitationem magni eveniet itaque repellendus ipsum labore ex enim rerum eos similique cumque modi, aliquam voluptatum veritatis corporis numquam? Recusandae!</p>
+
+            <p class="">Coucou les amis, un paragraphe !! Je rajoute un lien vers <a href="https://www.francemusique.fr/" class=""> site de mon choix</a> et après ce lien je rajoute encore du texte.</p>
+        </section>
+
+    </main>
 </body>
 </html>
