@@ -728,6 +728,109 @@ iframe[allowfullscreen] {
     font-size: 25px;
 }
 
+/* la page animation */
+
+.info-bulle {
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    background: #444;
+}
+
+.info-bulle p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.info-bulle a {
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: lightgray;
+    text-decoration: none;
+    text-shadow: 0 -2px 0 black;
+}
+
+.info-bulle a:hover {
+    background: rgba(255,255,255,0.60);
+    color: white;
+    text-shadow: 0 1px 2px black;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.781);
+
+
+}
+
+.info-bulle a span {
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    /* opacity fais disparaitre le contenu */
+    opacity: 0;
+
+
+    color: teal;
+    transition: .25s;
+    transform: scale(0) rotateZ(-12dg);
+    border-radius: 13px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.info-bulle a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+
+.info-bulle a span:before {
+    content: ' ';
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    
+    border-bottom: 6px solid rgba(255, 255, 255, 0.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.img-effects {
+    width: 302px;
+    height: 320px;
+    margin: 70px auto;
+}
+
+.img-effects li {
+    list-style: none;
+    float: left;
+    width: 141px;
+    height: 150px;
+    margin: 5px;
+}
+
+.img-effects li:nth-child(3) {
+    /* la derniere des 4 li (on commence à compter à 0) */
+    clear: both;
+    /* border: 10px solid red */
+}
+
+.img-effects img {
+    position: absolute;
+    /* toutes les images sont empilées en bas */
+    z-index: 1;
+    /* on cale l'image dans un bloc de 150 px */
+    height: 150px;
+    box-shadow: 0 0 10px black;
+    /* la transition fonctionne avec transform sur le hover du li */
+    transition: .5s cubic-bezier(0,3,.4,1);
+}
+
+.img-effects li:hover img {
+    z-index: 2;
+    transform: scale(1.5)
+}
+
+.img-effects:hover li:not(:hover) img {
+    filter: grayscale(1) blur(2px);
+}
 
 
 
